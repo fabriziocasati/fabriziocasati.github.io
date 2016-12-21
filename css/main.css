@@ -8,8 +8,8 @@ nav ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
-    position: fixed;
-    background-color: lightblue
+    /* position: fixed; */
+    /* background-color: lightblue */
 }
 footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
