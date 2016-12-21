@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <script> 
-        $(function(){
-          $("#head").load("/head.html"); 
-          $("#foot").load("/foot.html"); 
-          $('#loadingMask').fadeOut();
-        });
-    </script>
+
     <div id="head"></div>
 
 	<body>
@@ -23,6 +17,14 @@
 	</body>
 
     <div id="foot"></div>
+
+        <script> 
+        $(function(){
+          $("#head").load("/head.html"); 
+          $("#foot").load("/foot.html"); 
+          $('#loadingMask').fadeOut();
+        });
+    </script>
 
 </html>
 
