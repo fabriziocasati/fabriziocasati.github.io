@@ -1,3 +1,3 @@
 # fabriziocasati.github.io
 
-My personal Github page
+My personal GitHub page.
