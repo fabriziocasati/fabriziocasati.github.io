@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Fabrizio Casati</title>
+		<title>Title</title>
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">z
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
-	<body style="height:1500px">
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/pages/about.html">About</a></li>
-        		<li><a href="/pages/cv.html">CV</a></li>
-    		</ul>
-		</nav>
-		<div class="container" style="margin-top:150px">
+	<body>
+        <!-- Navigation bar -->
+        <div id="header"></div>
+
+		<div class="container">
     		<div class="blurb">
-        		<h1>Welcome!</h1>
-				<p>Thank you for visiting my page! <em>:)</em> Fabrizio <a href="/about">Read more about my life...</a></p>
+        		<h1>Heading</h1>
+				<p>Text</p>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/fabriziocasati">github.com/fabriziocasati</a></li>
-			</ul>
-		</footer>
+
+        <!-- Footer with some info -->
+        <div id="footer"></div>
+
+        <!-- Load shared navigation bar and footer -->
+        <script> 
+            $(function(){
+              $("#header").load("/header.html"); 
+              $("#footer").load("/footer.html"); 
+            });
+        </script>
 	</body>
 </html>
+
+
