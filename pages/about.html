@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Fabrizio Casati</title>
+		<title>Title</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 	<body>
+        <!-- Navigation bar -->
         <div id="nav"></div>
+
 		<div class="container">
     		<div class="blurb">
-        		<h1>Welcome!</h1>
-				<p>Thank you for visiting my page! <em>:)</em> Fabrizio <a href="/about">Read more about my life...</a></p>
+        		<h1>Heading</h1>
+				<p>Text</p>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
+
+        <!-- Footer with some info -->
         <div id="footer"></div>
+
+        <!-- Load shared navigation bar and footer -->
         <script> 
             $(function(){
-              $("#nav").load("header.html"); 
-              $("#footer").load("footer.html"); 
+              $("#nav").load("/header.html"); 
+              $("#footer").load("/footer.html"); 
             });
         </script>
 	</body>
