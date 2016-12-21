@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html>
+    <div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
 	<head>
 		<title>Title</title>
 		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-        <div id="head"></div>
-<script> 
-            $(function(){
-              $("#head").load("/head.html"); 
-            });
-        </script>
 	</head>
 	<body>
         <!-- Navigation bar -->
@@ -22,10 +18,12 @@
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 
-        <!-- Footer with some info -->
+	</body>
+    <footer>
+            <!-- Footer with some info -->
         <div id="footer"></div>
 
-<!-- Load shared navigation bar and footer -->
+        <!-- Load shared navigation bar and footer -->
         <script> 
             $(function(){
               $("#header").load("/header.html"); 
@@ -33,7 +31,7 @@
               $('#loadingMask').fadeOut();
             });
         </script>
-	</body>
+    </footer>
 </html>
 
 
