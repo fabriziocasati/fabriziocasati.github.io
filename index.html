@@ -5,6 +5,11 @@
 		<!-- link to main stylesheet -->
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <div id="head"></div>
+<script> 
+            $(function(){
+              $("#head").load("/head.html"); 
+            });
+        </script>
 	</head>
 	<body>
         <!-- Navigation bar -->
@@ -23,7 +28,6 @@
 <!-- Load shared navigation bar and footer -->
         <script> 
             $(function(){
-              $("#head").load("/head.html"); 
               $("#header").load("/header.html"); 
               $("#footer").load("/footer.html"); 
               $('#loadingMask').fadeOut();
