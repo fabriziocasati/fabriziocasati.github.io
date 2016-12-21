@@ -1,42 +1,36 @@
 <!DOCTYPE html>
 <html>
 <body>
-<form>
-  First name:<br>
-  <input type="text" name="firstname" value="Mickey">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse">
-  <br><br>
-<p>Hello</p>
-  <button onclick="myFunction()">Send</button>
-  <button onclick="showEmail()">Send</button>
-</form> 
-
-<p id="demo"></p>
+<button onclick="sendEmail()">Send Email</button>
+<p id="mailStatus"></p>
 
 <script>
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello World";
-}
-</script>
+function sendEmail()
+{
+     $.ajax({
+           url: "mail.php",
+           type: "POST",
+           success: function(response) {
+               if (!response) {
+                    alert("Something went wrong. Please try again");
+                    return;
+               }
 
-<script>
-function showEmail() {
-    alert("My email is:\n\n\tfabriziocasati.github.io@gmail.com\n\n(Notice that you can select it and copy it with CTRL+C)");
-}
-</script>
+               var parsedJSON = eval('('+response+')');
 
-<script>
-function sendMail() {
-    var link = "mailto:me@example.com"
-             + "?cc=myCCaddress@example.com"
-             + "&subject=" + escape("This is my subject")
-             + "&body=" + escape(document.getElementById('myText').value)
-    ;
-
-    window.location.href = link;
+               // If there's an error, display it.
+               if(parsedJSON.Error) {
+                  // Handle session timeout.
+                  if (parsedJSON.Error == "Timeout") {
+                       alert("Session timed out. Please login again.");
+                       window.location.reload();
+                   }
+                }
+               document.getElementById('mailStatus').innerHTML = "Email Sent successfully";  
+            }
+     });
 }
+
 </script>
 
 </body>
