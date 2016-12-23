@@ -23,22 +23,9 @@ function myFunction() {
 
 <script>
 function showEmail() {
-    alert("My email is:\n\n\tfabriziocasati.github.io@gmail.com\n\n[Note: you can select the email and copy it with CTRL+C,\nand then press CTRL+V to paste.]");
+    alert("My email is:\n\n\tfabriziocasati.github.io@gmail.com\n\n[Note: you can select the email above, so that it can be copied with CTRL+C,\nand then pasted with CTRL+V.]");
 }
 </script>
-
-<script>
-function sendMail() {
-    var link = "mailto:me@example.com"
-             + "?cc=myCCaddress@example.com"
-             + "&subject=" + escape("This is my subject")
-             + "&body=" + escape(document.getElementById('myText').value)
-    ;
-
-    window.location.href = link;
-}
-</script>
-
 </body>
 </html>
 
