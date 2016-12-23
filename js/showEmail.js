@@ -8,11 +8,15 @@ function show2() {
 }
 
 function show() {
-    return gen_mail_to_link('john.doe','example.com','Feedback about your site...');
+    return generateEmail('john.doe','example.com','Feedback about your site...');
 }
 
 function gen_mail_to_link(lhs,rhs,subject) {
         document.write("<a href=\"mailto");
         document.write(":" + lhs + "@");
         document.write(rhs + "?subject=" + subject + "\">" + lhs + "@" + rhs + "<\/a>");
-    }
+}
+
+function generateEmail(lhs,rhs,subject) {
+    return "<a href=\"mailto" + ":" + lhs + "@" + rhs + "?subject=" + subject + "\">" + lhs + "@" + rhs + "<\/a>";
+}
