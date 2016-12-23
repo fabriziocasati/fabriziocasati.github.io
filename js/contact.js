@@ -24,5 +24,9 @@ function generateEmail(a1,a2,a3,a4,a5) {
 }
 
 function generateEmail2(lhs,rhs,subject) {
+    return "<a href=\"mailto" + ":" + lhs + "@" + rhs + "?subject=" + subject + "\">" + lhs + "@" + rhs + "<\/a>";
+}
+
+function generateEmail3(lhs,rhs) {
     return "<a href=\"mailto" + ":" + lhs + "@" + rhs + "\">" + lhs + "@" + rhs + "<\/a>";
 }
