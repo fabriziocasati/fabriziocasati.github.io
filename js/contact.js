@@ -8,7 +8,7 @@ function show2() {
 }
 
 function showEmail() {
-    return generateEmail2('fabriziocasati.github','gmail.com','Feed');
+    return generateEmail2('fabriziocasati.github','gmail.com','');
     //return generateEmail('fabrizio','casati','github','gmail','com');
 }
 
