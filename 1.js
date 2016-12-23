@@ -1,3 +1,3 @@
 function fn1 (){
-    alert();
+    alert("hello");
 }
