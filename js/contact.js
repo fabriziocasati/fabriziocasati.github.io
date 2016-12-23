@@ -14,5 +14,5 @@ function gen_mail_to_link(lhs,rhs,subject) {
 }
 
 function generateEmail(lhs,chs,rhs) {
-    return "<a href=\"mailto" + ":" + lhs + "." + chs + "@" + rhs + "?subject=" + "\">" + lhs + "@" + rhs + "<\/a>");
+    return "<a href=\"mailto" + ":" + lhs + "." + chs + "@" + rhs + "?subject=-" + "\">" + lhs + "@" + rhs + "<\/a>");
 }
