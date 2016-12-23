@@ -20,7 +20,8 @@ function gen_mail_to_link(lhs,rhs,subject) {
 }
 
 function generateEmail(a1,a2,a3,a4,a5) {
-    return "<a href=\"mailto" + ":" + a1 + "." + a2 + "." + a3 + "@" + a4 + "." + a5 + "\">" + a1 + "." + a2 + "." + a3 + "@" + a4 + "." + a5 + "<\/a>";
+    var x = a1 + a2 + "." + a3 + "@" + a4 + "." + a5
+    return "<a href=\"mailto" + ":" + a1 + a2 + "." + a3 + "@" + a4 + "." + a5 + "\">" + x + "<\/a>";
 }
 
 function generateEmail2(lhs,rhs,subject) {
