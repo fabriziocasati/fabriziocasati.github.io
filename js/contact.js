@@ -1,10 +1,14 @@
-function showEmailAlert() {
+function showEmail() {
     var myemail = "fabrizio" + "casati" + ".github@gmail.com";
     alert("My email is:\n\n\t" + myemail + "\n\n[Note: you can select the email above with your mouse, so that it can be copied by pressing Ctrl+C and then pasted with Ctrl+V.]");
 }
 
-function showEmail() {
-    return generateEmail('fabriziocasati','github','gmail.com');
+function show2() {
+    return "hello";
+}
+
+function show() {
+    return generateEmail('john.doe','example.com','Feedback about your site...');
 }
 
 function gen_mail_to_link(lhs,rhs,subject) {
@@ -13,6 +17,6 @@ function gen_mail_to_link(lhs,rhs,subject) {
         document.write(rhs + "?subject=" + subject + "\">" + lhs + "@" + rhs + "<\/a>");
 }
 
-function generateEmail(lhs,chs,rhs) {
-    "<a href=\"mailto" + ":" + lhs + "." + chs + "@" + rhs + "?subject=-" + "\">" + lhs + "@" + rhs + "<\/a>");
+function generateEmail(lhs,rhs,subject) {
+    return "<a href=\"mailto" + ":" + lhs + "@" + rhs + "?subject=" + subject + "\">" + lhs + "@" + rhs + "<\/a>";
 }
