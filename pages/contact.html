@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <body>
-<p>Hello</p>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<form id="fr1">
-    <input type="text" id="tb1" />
-    <input type="text" id="tb2" />
-    <input type="button" id="bt1" value="click" />
-</form>
-<script>
-$(document).ready(function() {
-    $('#bt1').click(function() {
-        $('#fr1').attr('action',
-                       'mailto:fabriziocasati.github@gmail.com?subject=' +
-                       $('#tb1').val() + '&body=' + $('#tb2').val());
-        $('#fr1').submit();
-    });
-});
+<p><input id="subject" type="text" placeholder="type your subject here" 
+    class="form-control"></p>
+<p><input id="message" type="text" placeholder="type your message here" 
+    class="form-control"></p>
+<p><a id="mail-link" class="btn btn-primary">Create email</a></p>
+<script type="text/javascript">
+    function loadEvents() {
+        var mailString;
+        function updateMailString() {
+            mailString = '?subject=' + encodeURIComponent($('#subject').val())
+                + '&body=' + encodeURIComponent($('#message').val());
+            $('#mail-link').attr('href',  'mailto:person@email.com' + mailString);
+        }
+        $( "#subject" ).focusout(function() { updateMailString(); });
+        $( "#message" ).focusout(function() { updateMailString(); });
+        updateMailString();
+    }
 </script>
 </body>
 </html>
