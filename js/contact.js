@@ -8,7 +8,8 @@ function show2() {
 }
 
 function showEmail() {
-    return generateEmail('john.doe','example.com','Feedback about your site...');
+    //return generateEmail('fabrizio','casati','github','gmail','com');
+    return generateEmail('fabriziocasati.github','gmail.com','');
 }
 
 function gen_mail_to_link(lhs,rhs,subject) {
