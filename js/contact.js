@@ -8,7 +8,8 @@ function show2() {
 }
 
 function showEmail() {
-    return generateEmail2('fabriziocasati.github','gmail.com','');
+    return generateEmail3('fabriziocasati.github','gmail.com');
+    //return generateEmail2('fabriziocasati.github','gmail.com','');
     //return generateEmail('fabrizio','casati','github','gmail','com');
 }
 
@@ -23,5 +24,5 @@ function generateEmail(a1,a2,a3,a4,a5) {
 }
 
 function generateEmail2(lhs,rhs,subject) {
-    return "<a href=\"mailto" + ":" + lhs + "@" + rhs + "?subject=" + subject + "\">" + lhs + "@" + rhs + "<\/a>";
+    return "<a href=\"mailto" + ":" + lhs + "@" + rhs + "\">" + lhs + "@" + rhs + "<\/a>";
 }
