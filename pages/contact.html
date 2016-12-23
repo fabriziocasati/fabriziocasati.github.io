@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<!--#include file="emailObfuscator.include" -->
 <html>
-<body>
+    <div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
+	<head>
+		<title>Contact</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="/js/contact.js"></script>
+	</head>
+	<body>
+        <!-- Navigation bar -->
+        <div id="header"></div>
 
-<script src="/js/showEmail.js"></script>
+		<div class="container">
+    		<div class="blurb">
+        		<h1>Contact</h1>
+				<p>If you want to contact me, you can press the following botton to see my email.</p>
+                <button onclick="getElementById('demo').innerHTML=show()">Show Email</button>
+                <noscript>
+                    <em>Email address protected by JavaScript. Activate JavaScript to see the email.</em>
+                </noscript>
+                <p id="demo"></p>
+    		</div><!-- /.blurb -->
+		</div><!-- /.container -->
 
-<button onclick="getElementById('demo').innerHTML=show()">What is the time?</button>
+        <!-- Footer with some info -->
+        <div id="footer"></div>
 
-<p id="demo"></p>
-
-<p><a href="mailto:coxntact@domainx.com"
-    onmouseover="this.href=this.href.replace(/x/g,'');">link</a></p>
-
-
-
-  <button onclick="showEmail()">Show Email</button>
-
-  <button onclick="showEmail()">Show Email2</button>
-
-<button onclick="gen_mail_to_link('john.doe','example.com','Feedback about your site...')">Show Email</button>
-
-<script type="text/javascript"> 
-    gen_mail_to_link('john.doe','example.com','Feedback about your site...');
-</script>
-<noscript>
-  <em>Email address protected by JavaScript. Activate JavaScript to see the email.</em>
-</noscript>
-
-</body>
+        <!-- Load shared navigation bar and footer -->
+        <script> 
+            $(function(){
+              $("#header").load("/header.html"); 
+              $("#footer").load("/footer.html"); 
+              $('#loadingMask').fadeOut();
+            });
+        </script>
+	</body>
 </html>
-
-
-
