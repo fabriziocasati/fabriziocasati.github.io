@@ -21,7 +21,7 @@ function gen_mail_to_link(lhs,rhs,subject) {
 
 function generateEmail(a1,a2,a3,a4,a5) {
     var email = a1 + a2 + "." + a3 + "@" + a4 + "." + a5;
-    return "<a href=\"" + "mail" + "to" + ":" + email + "\">    " + email + "<\/a>";
+    return "<a href=\"" + "mail" + "to" + ":" + email + "\">    " + "ciao" + "<\/a>";
 }
 
 function generateEmail2(lhs,rhs,subject) {
