@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	    <title>Hello</title>
+	    <title>Contact Me</title>
 
 		<!-- Link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -25,14 +25,20 @@
 		</nav>
 	</head>
 	<body>
-        
+        <noscript>
+            <em>Email address protected by JavaScript. Activate JavaScript to see the email.</em>
+        </noscript>
 		<div class="container">
     		<div class="blurb">
-        		<h1>Heading</h1>
-				<p>Text</p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-
+        		<h1>How to contact me</h1>
+				<p>If you want to get in touch with me, you can drop me an email: press the botton below to show my email address.</p>
+                <button onclick="getElementById('placeForEmail').innerHTML=showEmail()">Show Email</button>
+                <noscript>
+                    <em>Email address protected by JavaScript: activate JavaScript to see it</em>
+                </noscript>
+                <p id="placeForEmail"></p>
+    		</div>
+		</div>
 	</body>
 	<footer>
 		<ul>
