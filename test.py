@@ -21,7 +21,7 @@ for line in main_file:
         generated_file.write("\t\t" + line)
         break
 
-# Restart copying lines from template file until tag <nav> is found
+# Restart copying lines from template file when until tag <nav> is found
 for line in template_file:
     if line.strip() == '<nav>':
         break
@@ -39,6 +39,8 @@ for line in template_file:
 for line in template_file:
     if line.strip() == '<body>':
         break
+    else:
+        generated_file.write(line)
 
 # Copy the whole remaining content of the non-template file
 for line in main_file:
