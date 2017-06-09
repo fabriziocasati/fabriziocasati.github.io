@@ -22,6 +22,7 @@ footer_ul {
     font-weight: bold;
     bottom: 0;
     position: fixed;
+    border-top: 1px solid #d5d5d5;
 }
 nav ul li, footer ul li {
     display: inline;
