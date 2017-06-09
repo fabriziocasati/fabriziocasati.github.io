@@ -31,6 +31,9 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+li a {
+    color: white;
+}
 a {
     text-decoration: none;
     color: red;
