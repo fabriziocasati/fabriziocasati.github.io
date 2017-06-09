@@ -13,7 +13,7 @@ head_ul {
     top: 0;
     height: 30px;
     background-color: lightblue;
-    padding: 18px;
+    padding: 10px;
 }
 footer_ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -57,4 +57,7 @@ ul.posts li {
 }
 li {
     display: inline;
+}
+li a {
+    padding: 30px;
 }
