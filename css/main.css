@@ -25,6 +25,7 @@ footer_ul {
     position: fixed;
     border-top: 1px solid #d5d5d5;
     width: 100%;
+    background-color: black;
 }
 nav ul li, footer ul li {
     display: inline;
