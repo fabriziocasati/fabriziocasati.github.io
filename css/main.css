@@ -11,7 +11,8 @@ nav ul {
     font-weight: bold;
     position: fixed;
     top: 0;
-    background-color: lightblue 
+    height: 30px;
+    /* background-color: lightblue */
 }
 footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
