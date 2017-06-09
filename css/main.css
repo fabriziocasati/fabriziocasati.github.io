@@ -1,6 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
+    margin-top: 5px;
     /* margin-top: 200px; */
 }
 nav ul {
@@ -10,8 +11,7 @@ nav ul {
     font-weight: bold;
     position: fixed;
     top: 0;
-    margin-top: 10px;
-    /* background-color: lightblue */
+    background-color: lightblue 
 }
 footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
