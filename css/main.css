@@ -4,7 +4,7 @@ body {
     margin-top: 50px;
     /* margin-top: 200px; */
 }
-ul {
+head_ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
@@ -14,11 +14,12 @@ ul {
     height: 30px;
     background-color: lightblue;
 }
-footer ul {
+footer_ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
+    bottom: 0;
 }
 nav ul li, footer ul li {
     display: inline;
