@@ -12,7 +12,7 @@ head_ul {
     position: fixed;
     top: 0;
     height: 30px;
-    background-color: #000066;
+    background-color: #000066; /* dark blue */
     padding: 10px;
     width: 100%;
 }
@@ -32,14 +32,14 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 li a {
-    color: white;
+    color: yellow;
 }
 a {
     text-decoration: none;
     color: red;
 }
 a:hover {
-    text-decoration: underline;
+    background-color: #006600; /* dark green */
 }
 h1 {
     font-size: 3em;
