@@ -56,7 +56,7 @@ ul.posts li {
     list-style: none;
 }
 li {
-    display: inline;
+    display: inline-block;
 }
 li a {
     padding: 10px;
