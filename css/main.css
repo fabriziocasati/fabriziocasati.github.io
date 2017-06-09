@@ -66,3 +66,6 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+li {
+    display: inline;
+}
