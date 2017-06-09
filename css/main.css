@@ -39,7 +39,7 @@ a {
     color: red;
 }
 a:hover {
-    background-color: #006600; /* dark green */
+    background-color: #0000cc; /* blue */
     height: 30px;
 }
 h1 {
