@@ -21,6 +21,7 @@ footer_ul {
     list-style: none;
     font-weight: bold;
     bottom: 0;
+    position: fixed;
 }
 nav ul li, footer ul li {
     display: inline;
