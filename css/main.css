@@ -40,7 +40,7 @@ li a {
     padding: 10px;
 }
 
-li a:hover {
+head_ul li a:hover {
     background-color: #0000cc; /* blue */
     height: 35px;
 }
