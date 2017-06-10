@@ -16,17 +16,33 @@
 		    <li><a href="contact.html">Contact</a></li>
 		    <li><a href="projects.html">Projects</a></li>
 		    <li><a href="example.html">Example</a></li>
+		    <li><a href="example_2.html">Example 2</a></li>
 		</head_ul>
 		
 	</head>
 	<body>
-        <div class="vertical-menu">
-          <a href="#" class="active">Home</a>
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-          <a href="#">Link 4</a>
-        </div> 
+        <p>Click on the buttons inside the tabbed menu:</p>
+
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+          <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+          <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+        </div>
+
+        <div id="London" class="tabcontent">
+          <h3>London</h3>
+          <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="Paris" class="tabcontent">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p> 
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
 		<div class="container">
 
     		<div class="blurb">
