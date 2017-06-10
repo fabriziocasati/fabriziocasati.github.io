@@ -40,10 +40,12 @@ li a {
     padding: 10px;
 }
 
+/*
 head_ul li a:hover {
     background-color: #0000cc; /* blue */
-    height: 35px;
+/*    height: 35px;
 }
+*/
 
 a {
     text-decoration: none;
