@@ -79,3 +79,7 @@ ul.posts li {
 li {
     display: inline;
 }
+
+my_tag {
+    color: purple;
+}
