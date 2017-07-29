@@ -52,18 +52,15 @@ head_ul li a:hover {
 a {
     text-decoration: underline;
     color: blue;
-    outline: 0;
 }
 
 /* Hyperlinks under mouse */
 a:hover{
     color: green;
-    outline: 0;    
 }
 
 /* Remove the outline that is shown the the link is clicked */
-a:active,
-a:focus, {
+a, a:hover, a:active, a:focus, {
     outline: 0;
 }
 
