@@ -57,6 +57,11 @@ a {
 /* Hyperlinks under mouse */
 a:hover{
     color: green;
+
+    /* Remove the outline that is shown the the link is clicked */
+    outline:0;
+    border:none;
+    -moz-outline-style: none;
 }
 
 h1 {
