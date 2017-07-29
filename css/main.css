@@ -48,7 +48,7 @@ head_ul li a:hover {
 */
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: blue;
 }
 
