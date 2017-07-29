@@ -38,6 +38,7 @@ nav ul li, footer ul li {
 li a {
     color: white;
     padding: 10px;
+    text-decoration: none; /* to suppress the general hyperlink text decoration */
 }
 
 /*
@@ -47,11 +48,13 @@ head_ul li a:hover {
 }
 */
 
+/* Hyperlinks */
 a {
     text-decoration: underline;
     color: blue;
 }
 
+/* Hyperlinks under mouse */
 a:hover{
     color: green;
 }
