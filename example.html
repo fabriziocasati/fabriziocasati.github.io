@@ -55,7 +55,7 @@
     <h4>C</h4>
     <ul data-role="listview">
       <li onclick="myFunction()"><a href="#">Calvin</a></li>
-      <li onclick="myFunction()"><a href="#">Cameron</a></li>
+      <li onclick="myFunction()2"><a href="#">Cameron</a></li>
       <li><a href="#">Chloe</a></li>
       <li><a href="#">Christina</a></li>
     </ul>
@@ -63,6 +63,7 @@
   </div>
 
     <p id="demo" onclick="myFunction()">Click me to change my text color.</p>
+    <p id="demo2">.</p>
 
   <div data-role="footer">
     <h1>Insert Footer Text Here</h1>
@@ -72,6 +73,9 @@
 <script>
 function myFunction() {
     document.getElementById("demo").style.color = "red";
+}
+function myFunction2() {
+    document.getElementById("demo2").innerHTML = "red";
 }
 </script>
 
