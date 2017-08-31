@@ -120,7 +120,6 @@ my_div {
 }
 
 #academic li {
-    display: inline;
     list-style-type:none;
     color: #0000FF;
     padding: 10px 20px;
