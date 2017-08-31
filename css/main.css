@@ -118,3 +118,10 @@ my_div {
     background-color: #4CAF50; /* Add a green color to the "active/current" link */
     color: white;
 }
+
+ul.my-list-style {
+    display: inline;
+    list-style-type:none;
+    color: #0000FF;
+    padding: 10px 20px;
+}
