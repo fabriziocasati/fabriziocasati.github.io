@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+        <!-- Include javascript -->
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+        <!-- Navigation bar -->
+        <nav>
+			<head_ul>
+			    <li><a href="/">Home</a></li>
+			    <li><a href="cv.html">Resume (CV)</a></li>
+			    <li><a href="contact.html">Contact</a></li>
+			    <li><a href="projects.html">Projects</a></li>
+			    <li><a href="example.html">Example</a></li>
+			    <li><a href="example_2.html">Example 2</a></li>
+			    <li><a href="example_3.html">Example 3</a></li>
+			</head_ul>
+        </nav>
+
+	</head>
+	<body>
+        <script src="/js/contact.js"></script>
+		<div class="container">
+    		<div style="margin-left: 50px; margin-right: 50px" class="blurb">
+        		<h1>How to contact me</h1>
+				<!--<p style="font-size:11px">--><p>If you want to get in touch with me, you can drop me an email: press the botton below to show my email address.</p>
+                <button id="showEmailButton" onclick="getElementById('placeForEmail').innerHTML=showEmail(); getElementById('showEmailButton').disabled = true">Show Email</button>
+                <noscript>
+                    <em>Email address protected by JavaScript: activate JavaScript to see it</em>
+                </noscript>
+                <!--<span id="placeForEmail"></span>-->
+                <span style="display:inline-block; width: 500"></span>
+                <span size="4" id="placeForEmail"></span>
+                <p>Otherwise, you can reach me using one of the other contacts provided in my <a href="/cv.html">resume (curriculum vitae)</a> or via my <a href="http://www.linkedin.com/in/fabrizio-casati-eng">LinkedIn</a> profile.</p>
+    		</div>
+		</div>
+	</body>
+    <footer>
+		<footer_ul>
+			<li><a href="https://github.com/fabriziocasati">github.com/fabriziocasati</a></li>
+		</footer_ul>
+    </footer>
+</html>
