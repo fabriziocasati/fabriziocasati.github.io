@@ -30,12 +30,12 @@ footer_ul {
     background-color: black;
 }
 
-nav ul li, footer ul li {
+nav ul myli, footer ul myli {
     display: inline;
     margin-right: 20px;
 }
 
-li a {
+myli a {
     color: white;
     padding: 10px;
     text-decoration: none; /* to suppress the general hyperlink text decoration */
@@ -81,13 +81,17 @@ ul.posts {
     font-size: 1.5em;
 }
 
-ul.posts li {
+myli li {
+    display: inline;
+}
+
+ul.posts myli {
     list-style: none;
 }
 
-li {
-    display: inline;
-}
+/*li {*/
+/*    display: inline;*/
+/*}*/
 
 my_tag {
     color: purple;
