@@ -124,3 +124,7 @@ my_div {
     list-style-type:disc;
     margin: 1px;
 }
+
+#projects a {
+    color: blue;
+}
