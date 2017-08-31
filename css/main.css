@@ -126,5 +126,6 @@ my_div {
 }
 
 #projects a {
+    margin-left: 0;
     color: blue;
 }
