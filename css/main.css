@@ -122,7 +122,7 @@ my_div {
 #projects li {
     display: list-item;
     list-style-type:disc;
-    margin: 1px;
+    margin: 3px;
 }
 
 #projects a {
