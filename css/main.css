@@ -121,7 +121,7 @@ my_div {
 
 #projects li {
     display: list-item;
-    list-style-type:none;
+    list-style-type:circle;
     color: #0000FF;
     padding: 10px 20px;
 }
