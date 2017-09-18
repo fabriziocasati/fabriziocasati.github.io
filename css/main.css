@@ -124,6 +124,7 @@ my_div {
     list-style-type:disc;
     margin: 3px;
     padding-top: 0px;
+    font-size: 12pt;
 }
 
 #hobbies a {
