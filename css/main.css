@@ -119,6 +119,20 @@ my_div {
     color: white;
 }
 
+#hobbies li {
+    display: list-item;
+    list-style-type:disc;
+    margin: 0px;
+}
+
+#hobbies a {
+    margin-left: 0;
+    margin-right: 0;
+    color: blue;
+    padding: 0;
+    text-decoration: underline;
+}
+
 #projects li {
     display: list-item;
     list-style-type:disc;
