@@ -137,6 +137,10 @@ my_div {
     text-decoration: underline;
 }
 
+#hobbies a:hover {
+    color: green;
+}
+
 #projects li {
     display: list-item;
     list-style-type:disc;
