@@ -122,7 +122,8 @@ my_div {
 #hobbies li {
     display: list-item;
     list-style-type:disc;
-    margin: 0px;
+    margin: 3px;
+    padding-top: 0px;
 }
 
 #hobbies a {
